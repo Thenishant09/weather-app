@@ -15,3 +15,47 @@
 </head>
 
 <body>
+    <div id="container">
+        <div id="logo">
+            <img id="icon" src="https://github.com/aryanjha205/WEATHER/blob/main/icon.gif?raw=true"
+                alt="Weather icon" />
+            <p id="name">Weather</p>
+        </div>
+        <div id="header">
+            <input type="text" spellcheck="false" placeholder="Search city" id="input" />
+        </div>
+
+        <div id="when-where">
+            <p id="city"></p>
+            <p id="day"></p>
+            <p id="date"></p>
+            <p id="temperature"></p>
+            <p id="conditions"></p>
+        </div>
+
+        <div id="now">
+
+            <div class="vidget">
+                <p id="feelsLike">
+                    <i class="fas fa-temperature-high"></i></p>
+
+            </div>
+
+            <div class="vidget">
+                <p id="wind"><i class="fas fa-wind"></i></p>
+            </div>
+
+            <div class="vidget">
+                <p id="humidity"><i class="fas fa-tint"></i></p>
+            </div>
+
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/TextPlugin.min.js"></script>
+    
+    <script src="script.js"></script>
+</body>
+
+</html>
