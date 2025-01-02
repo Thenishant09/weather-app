@@ -4,3 +4,272 @@ body {
   background-repeat: no-repeat;
   margin: 0;
 }
+
+#logo{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  border-bottom: 2px solid rgba(220, 217, 224, 0.722);
+}
+#icon {
+  width: 80px;
+  padding-left: 30px;
+
+
+}
+#name{
+  color: rgba(243, 239, 248, 0.722);
+  text-shadow: 0 0 35px #fff;
+  font-size: 40px;
+  font-family: 'Roboto', sans-serif;
+  padding: 20px;
+  font-weight: bold;
+}
+#container {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  background-image: linear-gradient(rgba(233, 200, 200, 0.3), rgba(0, 0, 0, 0.6));
+  min-height: 100vh;
+  font-family: 'Roboto', sans-serif;
+}
+
+#header {
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+#input {
+  background-color: rgba(220, 217, 224, 0.722);
+  border-radius: 20px;
+  border:none;
+  padding: 15px;
+  font-size: 20px;
+}
+::placeholder{
+  color: #FFF;
+  text-align: center;
+}
+#input:focus {
+  background-color: #fff;
+}
+
+#when-where {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#city {
+  color: #FFF;
+  font-size: 45px;
+  font-weight: bold;
+  margin-bottom: 30px;
+}
+
+#date, #day {
+  color: #FFF;
+  font-size: 24px;
+  margin-bottom: 0px;
+}
+
+#now {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+
+#temperature {
+  color: rgba(243, 239, 248, 0.984);
+  font-size: 110px;
+  font-weight: bold;
+  text-shadow: 5px 7px rgb(50, 50, 50);
+  margin: 0;
+  margin-left: 50px ;
+}
+
+.vidget {
+  display: flex;
+  flex-direction: row;
+margin-top: auto;
+  color: #FFF;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+#conditions, #day {
+
+  font-size: 28px;   
+  margin: 0;
+  color: #fff;
+  text-shadow: 0 0 6px #fff;
+}
+
+#variation {
+  color: #FFF;
+  font-size: 26px;
+  font-weight: bold;
+}
+
+i{
+  color: rgba(243, 239, 248, 0.722); 
+}
+
+
+
+@media all and (max-width:900px) {
+  .vidget {
+      font-size: 20px; 
+  }
+
+  #humidity, #wind, #feelsLike {
+      margin: 5px 5px;
+  }
+
+  #conditions{
+      margin: 20px;
+  }
+
+  #date, #day {
+      font-size: 20px;
+      margin-bottom: 0px;
+  }
+
+  #city{
+      font-size: 40px;
+  }
+
+  #temperature {
+      font-size: 100px;
+      text-shadow: 4px 7px rgb(66, 66, 66);
+  }
+
+  #name{
+      font-size: 35px;
+} 
+}
+
+
+
+@media all and (max-width:768px) {
+  .vidget {
+      font-size: 18px; 
+  }
+
+  #conditions{
+      margin: 20px;
+      font-size: 20px;
+  }
+
+  #date, #day{
+      font-size: 18px;
+  }
+
+  #city{
+      font-size: 30px;
+  }
+
+  #temperature {
+      font-size: 80px;
+  }
+
+  #name{
+      font-size: 30px;
+} 
+
+#input {
+  padding: 10px;
+  font-size: 15px;
+}
+}
+
+
+
+
+
+@media all and (max-width:600px) {
+ #now {
+ 
+  flex-direction: row; 
+  justify-content: space-around;
+ }
+
+  #conditions{
+      margin: 20px;
+      font-size: 18px;
+  }
+
+  #date, #day, #feelsLike, #wind, #humidity {
+      font-size: 16px;
+  }
+
+
+  #city{
+      font-size: 28px;
+  }
+
+  #temperature {
+      font-size: 60px;
+  }
+
+  #name{
+      font-size: 20px;
+} 
+#input {
+  padding: 10px;
+  font-size: 15px;
+}
+
+#icon {
+  width: 60px;
+  padding-left: 20px;
+}
+}
+
+@media all and (max-width:480px) {
+  #now {
+      display: flex;
+      flex-direction: row; 
+      justify-content: space-around;
+     }
+  
+      #conditions{
+          margin: 10px;
+          font-size: 15px;
+      }
+  
+      #date, #day, #feelsLike, #wind, #humidity {
+          font-size: 14px;
+      }
+  
+  
+      #city{
+          font-size: 18px;
+      }
+  
+      #temperature {
+          font-size: 50px;
+      }
+  
+      #name{
+          font-size: 19px;
+  } 
+  
+  #input {
+      padding: 5px;
+      font-size: 10px;
+  }
+
+  #icon {
+      width: 50px;
+      padding-left: 20px;
+  }
+
+  #logo{
+
+      border-bottom: 1px solid rgba(220, 217, 224, 0.722);
+  }
+}
