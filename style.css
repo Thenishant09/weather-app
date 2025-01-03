@@ -45,7 +45,7 @@ main form {
     border: 1px solid #5552;
     border-radius: 30px;
     padding: 10px;
-    gap: 15px; /* Add spacing between input fields and button */
+    gap: 10px; /* Add spacing between input fields and button */
 }
 
 main form input, 
@@ -53,7 +53,7 @@ main form button {
     border: none;
     background-color: transparent;
     outline: none;
-    padding: 10px;
+    padding: 5px;
     box-sizing: border-box;
     width: 100%; /* Ensure input fields and button fill their container */
 }
