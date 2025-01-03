@@ -96,7 +96,32 @@ const sendAlert = (weatherDescription) => {
             alert("Error sending alert. Please try again later.");
         });
 };
+// Function to update and display the current date and time
+// Function to update and display the current date and time
+const updateDateTime = () => {
+    const dateElement = document.getElementById('current-date');
+    const timeElement = document.getElementById('current-time');
+
+    const now = new Date();
+
+    // Format date as "3 January 2025"
+    const dateString = `${now.getDate()} ${now.toLocaleString('default', { month: 'long' })} ${now.getFullYear()}`;
+
+    // Format time as "09:43:09 AM"
+    const hours = now.getHours() % 12 || 12; // Convert to 12-hour format
+    const minutes = String(now.getMinutes()).padStart(2, '0'); // Ensure two digits
+    const seconds = String(now.getSeconds()).padStart(2, '0'); // Ensure two digits
+    const amPm = now.getHours() >= 12 ? 'PM' : 'AM';
+    const timeString = `${hours}:${minutes}:${seconds} ${amPm}`;
+
+    dateElement.innerText = `Date: ${dateString}`;
+    timeElement.innerText = `Time: ${timeString}`;
+};
+
+// Initialize the app with the current date, time, and weather data
 const initApp = () => {
+    updateDateTime(); // Update date and time
+    setInterval(updateDateTime, 1000); // Refresh time every second
     valueSearch.value = 'Vadodara';
     searchWeather();
 };
