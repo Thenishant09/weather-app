@@ -83,6 +83,18 @@ main .result .name{
     align-items: center;
     gap: 10px;
 }
+/* Date and Time Styling */
+.date-time {
+    text-align: center;
+    margin-bottom: 15px;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.date-time p {
+    margin: 5px 0; /* Add spacing between lines */
+}
+
 main .temperature img{
     width: 150px;
     filter: drop-shadow(0 10px 50px #555);
@@ -100,7 +112,7 @@ main ul{
     gap: 10px;
 }
 main li{
-    background-color: #f78a55;
+    background-color: #091ec1;
     color: #fff;
     border-radius: 10px;
     padding: 20px 10px;
@@ -124,7 +136,7 @@ main li:nth-child(3){
     background-color: #48567b;
 }
 main li:nth-child(4){
-    background-color: #f78a55;
+    background-color: #091ec1;
 }
 main li:nth-child(5){
     background-color: #b56291;
